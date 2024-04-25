@@ -1,5 +1,5 @@
 from time import sleep
-from pages.authorization_page import AuthorizationPage
+from pages.Authorization_page import AuthorizationPage
 import allure
 
 
@@ -30,4 +30,4 @@ def test_authorizationError(browser):
     with allure.step('Open browser'):
         authorization_page.open()
     with allure.step('Check the text'):
-        assert "Loogin" == authorization_page.login_button().text
+        assert "Login" == authorization_page.login_button().text
